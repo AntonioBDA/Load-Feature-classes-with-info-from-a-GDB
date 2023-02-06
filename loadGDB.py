@@ -3,8 +3,8 @@ import arcpy
 import os
 
 #Defining the gdb path
-ruta = arcpy.GetParameterAsText(0)
-arcpy.env.workspace = ruta
+path = arcpy.GetParameterAsText(0)
+arcpy.env.workspace = path
 
 #Listing datasets and adding datasets to the list
 datasets = arcpy.ListDatasets(feature_type='feature')
